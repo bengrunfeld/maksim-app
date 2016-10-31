@@ -1,0 +1,40 @@
+/*
+  ╔═╗┬ ┬┌─┐┬─┐┌┬┐
+  ║  ├─┤├─┤├┬┘ │ 
+  ╚═╝┴ ┴┴ ┴┴└─ ┴ 
+*/
+
+path {
+  stroke-width: 1;
+  fill: none;
+}
+
+.chart-well {
+  margin-top: 40px;
+}
+
+.tooltip {
+ background: #3e3e3e;
+ border-radius: 5px;
+ padding: 15px;
+ position: absolute;
+ opacity: 0;
+ color: white; 
+}
+
+.btn-go {
+  margin-left: 20px;
+}
+
+.chart-endpoint {
+  width: 400px;
+  padding: 5px;
+}
+
+.main-graph {
+  height: 300px;
+}
+
+svg {
+  overflow: visible !important;
+}

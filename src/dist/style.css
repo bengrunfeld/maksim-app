@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/*
+
+  ASCII Art – http://patorjk.com/software/taag/#p=display&h=2&v=2&f=Calvin%20S&t=Author%20-%20Ben%20Grunfeld
+
+*/
+/*
+  ╔═╗┬ ┬┌─┐┬─┐┌┬┐
+  ║  ├─┤├─┤├┬┘ │ 
+  ╚═╝┴ ┴┴ ┴┴└─ ┴ 
+*/
+path {
+  stroke-width: 1;
+  fill: none; }
+
+.chart-well {
+  margin-top: 40px; }
+
+.tooltip {
+  background: #3e3e3e;
+  border-radius: 5px;
+  padding: 15px;
+  position: absolute;
+  opacity: 0;
+  color: white; }
+
+.btn-go {
+  margin-left: 20px; }
+
+.chart-endpoint {
+  width: 400px;
+  padding: 5px; }
+
+.main-graph {
+  height: 300px; }
+
+svg {
+  overflow: visible !important; }
+
+/*
+  ╔╦╗┌─┐┌┬┐┌─┐┌┬┐┬┌┬┐┌─┐  ╔═╗┬┌─┐┬┌─┌─┐┬─┐
+   ║║├─┤ │ ├┤  │ ││││├┤   ╠═╝││  ├┴┐├┤ ├┬┘
+  ═╩╝┴ ┴ ┴ └─┘ ┴ ┴┴ ┴└─┘  ╩  ┴└─┘┴ ┴└─┘┴└─
+*/
+/* dtp = datetime picker */
+.datetime-picker .dtp-input {
+  width: 140px;
+  font-size: 12px; }
+
+/*
+  ╔╦╗┌─┐┬┌┐┌  ╔═╗┌─┐┌┐┌┬┐┌─┐┬┌┐┌┌─┐┬─┐
+  ║║║├─┤││││  ║  │ │││││ ├─┤││││├┤ ├┬┘
+  ╩ ╩┴ ┴┴┘└┘  ╚═╝└─┘┘└┘┴ ┴ ┴┴┘└┘└─┘┴└─
+*/
+.main-container {
+  margin-top: 50px; }
+
+/*
+  ╔╦╗┌─┐┬┌┐┌  ╔═╗┌─┐┌┐┌┬┐┌─┐┌┐┌┬┐
+  ║║║├─┤││││  ║  │ │││││ ├┤ ││││ 
+  ╩ ╩┴ ┴┴┘└┘  ╚═╝└─┘┘└┘┴ └─┘┘└┘┴ 
+*/
+.main-content {
+  margin-top: 50px; }
+
+.chart-options button {
+  margin-right: 20px; }
+
+/*
+  ╔╗╔┌─┐┬  ┬┌┐ ┌─┐┬─┐  ╔╦╗┌─┐┌┐┌┬ ┬
+  ║║║├─┤└┐┌┘├┴┐├─┤├┬┘  ║║║├┤ ││││ │
+  ╝╚╝┴ ┴ └┘ └─┘┴ ┴┴└─  ╩ ╩└─┘┘└┘└─┘
+*/
+.navbar-menu {
+  padding-top: 30px;
+  padding-left: 0;
+  background: #ececec;
+  overflow: hidden;
+  padding-bottom: 400px; }
+  .navbar-menu .navbar-menu-title {
+    padding-left: 40px;
+    color: #141b48;
+    border-bottom: 3px #e3e3e3 solid;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+    letter-spacing: 1px; }
+  .navbar-menu .navbar-menu li {
+    list-style: none;
+    color: #656565;
+    display: block;
+    padding-left: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px; }
+  .navbar-menu .navbar-menu li:hover {
+    background: #e3e3e3;
+    cursor: pointer; }
+  .navbar-menu .navbar-menu li a {
+    text-decoration: none;
+    color: #656565;
+    cursor: pointer; }
+  .navbar-menu .navbar-glyp {
+    padding-right: 15px; }
+
+@media (max-width: 1200px) {
+  .navbar .navbar-title {
+    padding-left: 20px !important; }
+  .navbar .navbar-menu li {
+    padding-left: 20px !important; } }
+
+/*
+  ╔╗╔┌─┐┬  ┬╔╗ ┌─┐┬─┐
+  ║║║├─┤└┐┌┘╠╩╗├─┤├┬┘
+  ╝╚╝┴ ┴ └┘ ╚═╝┴ ┴┴└─
+ */
+.tt-navbar {
+  background-color: #141b48; }
+
+.navbar-brand {
+  position: relative;
+  top: -4px; }
+
+.hamburger {
+  font-size: 24px;
+  color: #e3e3e3;
+  padding-top: 12px;
+  display: inline-block;
+  margin-left: 45px; }
+
+.user-options .username {
+  font-size: 16px;
+  color: #e3e3e3;
+  position: relative;
+  top: 10px;
+  right: 70px; }
+
+.user-options .user-settings {
+  font-size: 22px;
+  color: #e3e3e3;
+  position: relative;
+  top: 15px;
+  right: 40px; }
+
+/*
+  ╔═╗┬┌┬┐┌─┐╔╗ ┌─┐┬─┐
+  ╚═╗│ ││├┤ ╠╩╗├─┤├┬┘
+  ╚═╝┴─┴┘└─┘╚═╝┴ ┴┴└─
+*/
+.sidebar {
+  padding-left: 0; }
+  .sidebar .sidebar-menu {
+    position: relative;
+    left: -15px;
+    padding-top: 30px;
+    padding-left: 0;
+    background: #ececec;
+    padding-bottom: 400px; }
+  .sidebar .sidebar-menu-title {
+    padding-left: 40px;
+    color: #141b48;
+    border-bottom: 3px #e3e3e3 solid;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+    letter-spacing: 1px; }
+  .sidebar .signal-picker {
+    width: 170px;
+    margin-left: 25px;
+    margin-top: 40px; }
+    .sidebar .signal-picker .tag-name select {
+      max-width: 180px;
+      font-size: large; }
+    .sidebar .signal-picker .add-signal {
+      margin-top: 30px;
+      width: 140px; }
+    .sidebar .signal-picker .sample-signal {
+      font-size: 15px; }
+
+@media (max-width: 1200px) {
+  .sidebar .sidebar-title {
+    padding-left: 20px !important; } }
+
+/*# sourceMappingURL=style.css.map */

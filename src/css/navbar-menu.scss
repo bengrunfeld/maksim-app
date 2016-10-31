@@ -1,0 +1,57 @@
+/*
+  ╔╗╔┌─┐┬  ┬┌┐ ┌─┐┬─┐  ╔╦╗┌─┐┌┐┌┬ ┬
+  ║║║├─┤└┐┌┘├┴┐├─┤├┬┘  ║║║├┤ ││││ │
+  ╝╚╝┴ ┴ └┘ └─┘┴ ┴┴└─  ╩ ╩└─┘┘└┘└─┘
+*/
+
+.navbar-menu {
+    padding-top: 30px;
+    padding-left: 0;
+    background: #ececec;
+    overflow:hidden;
+    padding-bottom: 400px;
+
+    .navbar-menu-title {
+      padding-left: 40px;
+      color: #141b48;
+      border-bottom: 3px #e3e3e3 solid;
+      padding-bottom: 40px;
+      margin-bottom:0;
+      letter-spacing: 1px;
+    }
+
+    .navbar-menu li {
+      list-style:none;
+      color: #656565;
+      display: block;
+      padding-left: 40px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+
+    .navbar-menu li:hover {
+      background: #e3e3e3;
+      cursor: pointer;
+    }
+
+    .navbar-menu li a {
+      text-decoration: none;
+      color: #656565;
+      cursor: pointer;
+    }
+
+    .navbar-glyp {
+      padding-right: 15px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .navbar {
+      .navbar-title {
+        padding-left: 20px !important;
+      }
+      .navbar-menu li {
+        padding-left: 20px !important;
+      }
+    }
+}

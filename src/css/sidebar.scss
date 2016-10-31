@@ -1,0 +1,58 @@
+/*
+  ╔═╗┬┌┬┐┌─┐╔╗ ┌─┐┬─┐
+  ╚═╗│ ││├┤ ╠╩╗├─┤├┬┘
+  ╚═╝┴─┴┘└─┘╚═╝┴ ┴┴└─
+*/
+
+.sidebar {
+
+  padding-left:0;
+
+  .sidebar-menu {
+    position:relative;
+    left: -15px;
+    padding-top: 30px;
+    padding-left: 0;
+    background: #ececec;
+    padding-bottom: 400px;
+  }
+
+  .sidebar-menu-title {
+    padding-left: 40px;
+    color: #141b48;
+    border-bottom: 3px #e3e3e3 solid;
+    padding-bottom: 40px;
+    margin-bottom:0;
+    letter-spacing: 1px;
+  }
+
+  .signal-picker {
+    width: 170px;
+    margin-left: 25px;
+    margin-top: 40px;
+
+    .tag-name {
+      select {
+        max-width:180px;
+        font-size: large;
+      }
+    }
+
+    .add-signal {
+      margin-top: 30px;
+      width: 140px;
+    }
+
+    .sample-signal {
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .sidebar {
+    .sidebar-title {
+      padding-left: 20px !important;
+    }
+  }
+}
