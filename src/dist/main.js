@@ -20405,7 +20405,7 @@ var AppActions = {
 
 module.exports = AppActions;
 
-},{"../constants/constants":174,"../dispatcher/dispatcher":175}],173:[function(require,module,exports){
+},{"../constants/constants":176,"../dispatcher/dispatcher":177}],173:[function(require,module,exports){
 'use strict';
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -20419,8 +20419,8 @@ var AppStore = require('../stores/store');
 // App Components
 
 // React Class
-var Layout = React.createClass({
-  displayName: 'Layout',
+var NavBar = React.createClass({
+  displayName: 'NavBar',
 
   render: function render() {
     var _React$createElement;
@@ -20519,39 +20519,102 @@ var Layout = React.createClass({
               )
             )
           )
-        ),
-        '//search bar',
-        React.createElement(
-          'div',
-          { className: 'row' },
-          React.createElement(
-            'div',
-            { id: 'search-container', className: 'col-xs-12 col-md-12 col-lg-12' },
-            React.createElement(
-              'form',
-              { className: 'form-search form-inline' },
-              React.createElement('input', { type: 'text', className: 'search-query', placeholder: 'Search...' })
-            ),
-            React.createElement(
-              'button',
-              { type: 'submit', className: 'btn-default btn-primary' },
-              'Submit'
-            )
-          )
-        ),
-        React.createElement(
-          'div',
-          { className: 'row' },
-          React.createElement('div', { className: 'col-xs-12 col-md-12 col-lg-12', id: 'search-result-container' })
         )
       )
     );
   }
 });
 
-module.exports = Layout;
+module.exports = NavBar;
 
-},{"../actions/actions":172,"../stores/store":177,"react":171}],174:[function(require,module,exports){
+},{"../actions/actions":172,"../stores/store":179,"react":171}],174:[function(require,module,exports){
+'use strict';
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var React = require('react');
+
+// Flux stuff
+var AppActions = require('../actions/actions');
+var AppStore = require('../stores/store');
+
+// App Components
+
+// React Class
+var SearchBar = React.createClass({
+  displayName: 'SearchBar',
+
+  render: function render() {
+    var _React$createElement;
+
+    return (
+      // navbar
+      React.createElement(
+        'div',
+        { className: 'container' },
+        React.createElement(
+          'div',
+          { className: 'row' },
+          React.createElement(
+            'div',
+            (_React$createElement = { className: 'col-xs-12' }, _defineProperty(_React$createElement, 'className', 'col-md-12'), _defineProperty(_React$createElement, 'className', 'col-lg-12'), _React$createElement),
+            React.createElement(
+              'div',
+              { id: 'search-container', className: 'col-xs-12 col-md-12 col-lg-12' },
+              React.createElement(
+                'form',
+                { className: 'form-search form-inline' },
+                React.createElement('input', { type: 'text', className: 'search-query', placeholder: 'Search...' })
+              ),
+              React.createElement(
+                'button',
+                { type: 'submit', className: 'btn-default btn-primary' },
+                'Submit'
+              )
+            )
+          )
+        )
+      )
+    );
+  }
+});
+
+module.exports = SearchBar;
+
+},{"../actions/actions":172,"../stores/store":179,"react":171}],175:[function(require,module,exports){
+'use strict';
+
+var React = require('react');
+
+// Flux stuff
+var AppActions = require('../actions/actions');
+var AppStore = require('../stores/store');
+
+// App Components
+
+// React Class
+var SearchResults = React.createClass({
+  displayName: 'SearchResults',
+
+  render: function render() {
+    return (
+      // navbar
+      React.createElement(
+        'div',
+        { className: 'container' },
+        React.createElement(
+          'div',
+          { className: 'row' },
+          React.createElement('div', { className: 'col-xs-10 col-md-10 col-lg-10 col-xs-offset-1 col-md-offset-1 col-lg-offset-1', id: 'search-result-container' })
+        )
+      )
+    );
+  }
+});
+
+module.exports = SearchResults;
+
+},{"../actions/actions":172,"../stores/store":179,"react":171}],176:[function(require,module,exports){
 'use strict';
 
 module.exports = {
@@ -20559,7 +20622,7 @@ module.exports = {
   CHANGE_EVENT: 'CHANGE_EVENT'
 };
 
-},{}],175:[function(require,module,exports){
+},{}],177:[function(require,module,exports){
 'use strict';
 
 var Dispatcher = require('flux').Dispatcher;
@@ -20576,18 +20639,29 @@ var AppDispatcher = assign(new Dispatcher(), {
 
 module.exports = AppDispatcher;
 
-},{"flux":28,"object-assign":31}],176:[function(require,module,exports){
+},{"flux":28,"object-assign":31}],178:[function(require,module,exports){
 'use strict';
 
 var React = require('react');
 var ReactDOM = require('react-dom');
 
 // App Components
-var App = require('./components/layout.js');
+var NavBar = require('./components/NavBar.js');
+var SearchBar = require('./components/SearchBar.js');
+var SearchResults = require('./components/SearchResults.js');
 
-ReactDOM.render(React.createElement(App, null), document.getElementById('main'));
+ReactDOM.render(React.createElement(
+  'div',
+  null,
+  React.createElement(NavBar, null),
+  ',',
+  React.createElement(SearchBar, null),
+  ',',
+  React.createElement(SearchResults, null),
+  ','
+), document.getElementById('main'));
 
-},{"./components/layout.js":173,"react":171,"react-dom":33}],177:[function(require,module,exports){
+},{"./components/NavBar.js":173,"./components/SearchBar.js":174,"./components/SearchResults.js":175,"react":171,"react-dom":33}],179:[function(require,module,exports){
 'use strict';
 
 // Store
@@ -20848,4 +20922,4 @@ AppDispatcher.register(function (payload) {
 
 module.exports = AppStore;
 
-},{"../actions/actions":172,"../constants/constants":174,"../dispatcher/dispatcher":175,"events":1,"object-assign":31}]},{},[176]);
+},{"../actions/actions":172,"../constants/constants":176,"../dispatcher/dispatcher":177,"events":1,"object-assign":31}]},{},[178]);

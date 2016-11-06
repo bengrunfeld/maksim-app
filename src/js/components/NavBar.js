@@ -7,7 +7,7 @@ var AppStore = require('../stores/store');
 // App Components
 
 // React Class
-var Layout = React.createClass({
+var NavBar = React.createClass({
   render: function(){
     return (
       // navbar
@@ -39,24 +39,9 @@ var Layout = React.createClass({
             </div>   
           </div>
         </div>
-            //search bar
-        <div className="row">
-          <div id="search-container" className="col-xs-12 col-md-12 col-lg-12">
-            <form className="form-search form-inline">
-                <input type="text" className="search-query" placeholder="Search..." />
-            </form>
-            <button type="submit" className="btn-default btn-primary">Submit</button>
-          </div>
-        </div>
-
-        <div className="row">
-          <div className="col-xs-12 col-md-12 col-lg-12" id="search-result-container">
-          </div>
-        </div>
       </div>
     )
   }
 });
 
-module.exports = Layout;
-
+module.exports = NavBar;
