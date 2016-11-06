@@ -52,20 +52,18 @@ svg {
   ║║║├─┤││││  ║  │ │││││ ├─┤││││├┤ ├┬┘
   ╩ ╩┴ ┴┴┘└┘  ╚═╝└─┘┘└┘┴ ┴ ┴┴┘└┘└─┘┴└─
 */
-.main-container {
-  margin-top: 50px; }
+#mainContent {
+  display: block;
+  width: 80%;
+  height: 600px;
+  background-color: green;
+  float: right; }
 
 /*
   ╔╦╗┌─┐┬┌┐┌  ╔═╗┌─┐┌┐┌┬┐┌─┐┌┐┌┬┐
   ║║║├─┤││││  ║  │ │││││ ├┤ ││││ 
   ╩ ╩┴ ┴┴┘└┘  ╚═╝└─┘┘└┘┴ └─┘┘└┘┴ 
 */
-.main-content {
-  margin-top: 50px; }
-
-.chart-options button {
-  margin-right: 20px; }
-
 /*
   ╔╗╔┌─┐┬  ┬┌┐ ┌─┐┬─┐  ╔╦╗┌─┐┌┐┌┬ ┬
   ║║║├─┤└┐┌┘├┴┐├─┤├┬┘  ║║║├┤ ││││ │
@@ -112,33 +110,12 @@ svg {
   ║║║├─┤└┐┌┘╠╩╗├─┤├┬┘
   ╝╚╝┴ ┴ └┘ ╚═╝┴ ┴┴└─
  */
-.tt-navbar {
-  background-color: #141b48; }
-
-.navbar-brand {
-  position: relative;
-  top: -4px; }
-
-.hamburger {
-  font-size: 24px;
-  color: #e3e3e3;
-  padding-top: 12px;
-  display: inline-block;
-  margin-left: 45px; }
-
-.user-options .username {
-  font-size: 16px;
-  color: #e3e3e3;
-  position: relative;
-  top: 10px;
-  right: 70px; }
-
-.user-options .user-settings {
-  font-size: 22px;
-  color: #e3e3e3;
-  position: relative;
-  top: 15px;
-  right: 40px; }
+#navbar-section {
+  width: 100%;
+  height: 100px;
+  display: block;
+  background-color: yellow;
+  clear: both; }
 
 /*
   ╔═╗┬┌┬┐┌─┐╔╗ ┌─┐┬─┐
