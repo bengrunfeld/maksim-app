@@ -52,7 +52,7 @@ svg {
   ║║║├─┤││││  ║  │ │││││ ├─┤││││├┤ ├┬┘
   ╩ ╩┴ ┴┴┘└┘  ╚═╝└─┘┘└┘┴ ┴ ┴┴┘└┘└─┘┴└─
 */
-#mainContent {
+#search-result-container {
   display: block;
   width: 80%;
   height: 600px;
@@ -110,12 +110,23 @@ svg {
   ║║║├─┤└┐┌┘╠╩╗├─┤├┬┘
   ╝╚╝┴ ┴ └┘ ╚═╝┴ ┴┴└─
  */
-#navbar-section {
-  width: 100%;
-  height: 100px;
+input.search-query {
   display: block;
-  background-color: yellow;
-  clear: both; }
+  width: 100%;
+  min-height: 28px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10p; }
+
+input[type="text"] {
+  box-sizing: border-box; }
+
+form.form-search:before {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-position: -48px 0;
+  z-index: 1000; }
 
 /*
   ╔═╗┬┌┬┐┌─┐╔╗ ┌─┐┬─┐

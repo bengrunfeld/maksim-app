@@ -20408,6 +20408,8 @@ module.exports = AppActions;
 },{"../constants/constants":174,"../dispatcher/dispatcher":175}],173:[function(require,module,exports){
 'use strict';
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 var React = require('react');
 
 // Flux stuff
@@ -20421,41 +20423,126 @@ var Layout = React.createClass({
   displayName: 'Layout',
 
   render: function render() {
-    return React.createElement(
-      'section',
-      null,
+    var _React$createElement;
+
+    return (
+      // navbar
       React.createElement(
         'div',
-        { id: 'navbar' },
-        React.createElement(
-          'nav',
-          { 'class': 'navbar navbar-default' },
-          React.createElement('div', { 'class': 'container-fluid', id: 'navbar-section' })
-        )
-      ),
-      React.createElement('article', { id: 'mainContent' }),
-      React.createElement(
-        'div',
-        null,
-        'hourly forcast'
-      ),
-      React.createElement(
-        'div',
-        null,
-        '10 day forecast'
-      ),
-      React.createElement(
-        'div',
-        null,
-        'Pollen and other allergins'
-      ),
-      React.createElement(
-        'div',
-        { id: 'footer' },
+        { className: 'container' },
         React.createElement(
           'div',
-          null,
-          'FOOTER'
+          { className: 'row' },
+          React.createElement(
+            'div',
+            (_React$createElement = { className: 'col-xs-12' }, _defineProperty(_React$createElement, 'className', 'col-md-12'), _defineProperty(_React$createElement, 'className', 'col-lg-12'), _React$createElement),
+            React.createElement(
+              'div',
+              { id: 'navbar' },
+              React.createElement(
+                'nav',
+                { className: 'navbar navbar-default' },
+                React.createElement(
+                  'div',
+                  { className: 'container-fluid' },
+                  React.createElement(
+                    'div',
+                    { className: 'navbar-collapse', id: 'bs-example-navbar-collapse-1' },
+                    React.createElement(
+                      'ul',
+                      { className: 'nav navbar-nav' },
+                      React.createElement(
+                        'li',
+                        null,
+                        React.createElement(
+                          'a',
+                          { href: '#' },
+                          'Foo'
+                        )
+                      ),
+                      React.createElement(
+                        'li',
+                        { className: 'dropdown' },
+                        React.createElement(
+                          'a',
+                          { href: '#', className: 'dropdown-toggle', 'data-toggle': 'dropdown', role: 'button', 'aria-haspopup': 'true', 'aria-expanded': 'false' },
+                          'Bar',
+                          React.createElement('span', { 'class': 'caret' })
+                        ),
+                        React.createElement(
+                          'ul',
+                          { className: 'dropdown-menu' },
+                          React.createElement('li', { role: 'separator', className: 'divider' }),
+                          React.createElement(
+                            'li',
+                            null,
+                            React.createElement(
+                              'a',
+                              { href: '#' },
+                              'Foo'
+                            )
+                          ),
+                          React.createElement('li', { role: 'separator', className: 'divider' }),
+                          React.createElement(
+                            'li',
+                            null,
+                            React.createElement(
+                              'a',
+                              { href: '#' },
+                              'Bar Toggle'
+                            )
+                          ),
+                          React.createElement('li', { role: 'separator', className: 'divider' }),
+                          React.createElement(
+                            'li',
+                            null,
+                            React.createElement(
+                              'a',
+                              { href: '#' },
+                              'Baz'
+                            )
+                          )
+                        )
+                      ),
+                      React.createElement(
+                        'li',
+                        null,
+                        React.createElement(
+                          'a',
+                          { href: '#' },
+                          'Baz'
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        ),
+        '//search bar',
+        React.createElement(
+          'div',
+          { className: 'row' },
+          React.createElement(
+            'div',
+            { id: 'search-container', className: 'col-xs-12 col-md-12 col-lg-12' },
+            React.createElement(
+              'form',
+              { className: 'form-search form-inline' },
+              React.createElement('input', { type: 'text', className: 'search-query', placeholder: 'Search...' })
+            ),
+            React.createElement(
+              'button',
+              { type: 'submit', className: 'btn-default btn-primary' },
+              'Submit'
+            )
+          )
+        ),
+        React.createElement(
+          'div',
+          { className: 'row' },
+          React.createElement('div', { className: 'col-xs-12 col-md-12 col-lg-12', id: 'search-result-container' })
         )
       )
     );
