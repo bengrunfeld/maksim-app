@@ -4,6 +4,11 @@
   ╩ ╩┴ ┴┴┘└┘  ╚═╝└─┘┘└┘┴ ┴ ┴┴┘└┘└─┘┴└─
 */
 
-.main-container {
-  margin-top: 50px;
+#search-result-container{
+  display: block;
+  width: 87%;
+  margin-right: 50px;
+  height: 600px;
+  background-color: green;
+  float: right;
 }

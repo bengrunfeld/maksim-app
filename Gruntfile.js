@@ -47,5 +47,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks("grunt-sass");
 
-  grunt.registerTask("default", ["browserify", "concat", "sass", "clean"]);
+  grunt.registerTask("default", [ "clean", "browserify", "concat", "sass"]);
 };
